@@ -1,0 +1,70 @@
+body {
+    background: #DDD;
+}
+#header {
+    text-align: center;
+}
+.employee_content {
+    border: 1px dotted black;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+/*    height: 200px;
+    width: 150px;*/
+}
+.photo {
+    width: 80px;
+    height: 90px;
+}
+.first_last_name, .uid_tooltip {
+    font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: smaller;
+}
+.location {
+    font: "Times New Roman";
+    font-size: smaller;
+}
+.mail {
+    font-size: smaller;
+}
+.internal_phone, .external_phone, .mobile_phone, .department, .first_last_name, .employee_title {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: smaller;
+}
+.employee-tooltip-style {
+    width: 400px !important;
+    max-width: 400px !important;
+    overflow: auto !important;
+    color: #069;
+}
+.data_employee {
+	width: 15px;
+	opacity: 0.5;
+}
+.data_employee_header {
+    font-weight: bold;
+}
+.input_exemple_description {
+    font-weight: bold;
+}.input_exemple_value {
+    color: gray;
+    font-style: italic;
+}
+.ui-autocomplete-category {
+    font-weight: bold;
+    padding: .2em .4em;
+    margin: .8em 0 .2em;
+    line-height: 1.5;
+}
+.ui-autocomplete {
+    max-height: 80%;/*500px;*/
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+}
+/* IE 6 doesn't support max-height
+* we use height instead, but this forces the menu to always be this tall
+*/
+* html .ui-autocomplete {
+    height: 80%;/*500px;*/
+}
