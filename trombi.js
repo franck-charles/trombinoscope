@@ -46,16 +46,16 @@ $(function() {
                 "  </th>" +
                 "  <tr>" +
                 "    <td rowspan='6'><img style='width:100px;' src='data/" + user_id + ".jpg'/></td>" +
-                "    <td>&nbsp;&nbsp;&nbsp;<img class='data_employee' src='/static/img/employee.svg'/>&nbsp;&nbsp;<span class='employee_title'>" + title + "</span></td>" +
+                "    <td>&nbsp;&nbsp;&nbsp;<img class='data_employee' src='employee.svg'/>&nbsp;&nbsp;<span class='employee_title'>" + title + "</span></td>" +
                 "  </tr>" +
                 "  <tr>" +
-                "    <td>&nbsp;&nbsp;&nbsp;<img class='data_employee' src='/static/img/location.png'/>&nbsp;&nbsp;" + (employee_data["location"] ? '<span class="location" title="Location">' + employee_data["location"] + '</span>' : '-') + "</td>" +
+                "    <td>&nbsp;&nbsp;&nbsp;<img class='data_employee' src='location.png'/>&nbsp;&nbsp;" + (employee_data["location"] ? '<span class="location" title="Location">' + employee_data["location"] + '</span>' : '-') + "</td>" +
                 "  </tr>" +
                 "  <tr>" +
-                "    <td>&nbsp;&nbsp;&nbsp;<img class='data_employee' src='/static/img/department.png'/>&nbsp;&nbsp;<span class='department'>" + employee_data["departments"] + "</span></td>" +
+                "    <td>&nbsp;&nbsp;&nbsp;<img class='data_employee' src='department.png'/>&nbsp;&nbsp;<span class='department'>" + employee_data["departments"] + "</span></td>" +
                 "  </tr>" +
                 "  <tr>" +
-                "    <td>&nbsp;&nbsp;&nbsp;<img class='data_employee' src='/static/img/phone.png'/>&nbsp;&nbsp;" + (employee_data["phone"] ? '<span class="internal_phone"  title="phone">' + employee_data["phone"] + '</span>' : '-') + "</td>" +
+                "    <td>&nbsp;&nbsp;&nbsp;<img class='data_employee' src='phone.png'/>&nbsp;&nbsp;" + (employee_data["phone"] ? '<span class="internal_phone"  title="phone">' + employee_data["phone"] + '</span>' : '-') + "</td>" +
                 "  </tr>" +
                 "</table>" +
                 "<br><br>";
