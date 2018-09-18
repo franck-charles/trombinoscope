@@ -52,7 +52,7 @@ $(function() {
                 "    <td>&nbsp;&nbsp;&nbsp;<img class='data_employee' src='location.png'/>&nbsp;&nbsp;" + (employee_data["location"] ? '<span class="location" title="Location">' + employee_data["location"] + '</span>' : '-') + "</td>" +
                 "  </tr>" +
                 "  <tr>" +
-                "    <td>&nbsp;&nbsp;&nbsp;<img class='data_employee' src='department.png'/>&nbsp;&nbsp;<span class='department'>" + employee_data["departments"] + "</span></td>" +
+                "    <td>&nbsp;&nbsp;&nbsp;<img class='data_employee' src='department.png'/>&nbsp;&nbsp;" + (employee_data["departments"] ? "<span class='department'>" + employee_data["departments"] + "</span>" : '-' ) + "</td>" +
                 "  </tr>" +
                 "  <tr>" +
                 "    <td>&nbsp;&nbsp;&nbsp;<img class='data_employee' src='phone.png'/>&nbsp;&nbsp;" + (employee_data["phone"] ? '<span class="internal_phone"  title="phone">' + employee_data["phone"] + '</span>' : '-') + "</td>" +
@@ -118,8 +118,8 @@ $(function() {
                 var title = get_title(employee_data["title"]);
                 var phone = employee_data["phone"];
                 $.each(employee_data["departments"], function(index, a_department) {
-                    add_if_not_exists(departments, a_department);
-                    if (a_department != null) {
+                    if (a_department != null && a_department != undefined) {
+                        add_if_not_exists(departments, a_department);
                         departments_list += (departments_list.length == 0 ? '' : ' / ') + a_department;
                     }
                 });
@@ -127,7 +127,7 @@ $(function() {
                 employees_attributes.push(name + ' | ' + location + ' | ' + departments_list + ' | ' + user_id + ' | ' + title + ' | ' + phone);
                 console.log(name + ' | Loc: ' + location + ' | Dept: ' + departments_list + ' | UID: ' + user_id + ' | Title: ' + title + ' | Phone: ' + phone);
 
-                add_if_not_exists(locations, location);
+                add_if_not_exists(locations, (location != undefined ? location : '-'));
                 add_if_not_exists(titles, title);
             });
             locations.sort();
