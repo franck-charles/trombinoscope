@@ -1,6 +1,7 @@
 # Trombinoscope
 
 Display a trombinoscope (organization chart with photographs) from Json/Yaml file.
+
 See demo : [Trombinoscope (démo)](http://www.trombinoscope.ovh/ "Trombinoscope (démo)")
 
 ## Getting Started
